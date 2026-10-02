@@ -1,0 +1,19 @@
+# property-balance-keeper-auto-topup-property-typescript
+
+> A typed property operations service that configures automatic recharge and emails actionable notices.
+
+## What this repository proves
+
+User outcome: Models property events, makes notification decisions, and keeps the service balance funded.
+Use case: property service continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `const baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `test/property_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

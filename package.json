@@ -1,0 +1,25 @@
+{
+  "name": "property-balance-keeper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A typed property operations service that configures automatic recharge and emails actionable notices.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx src/property_service.ts",
+    "configure:recharge": "tsx src/configure_recharge.ts",
+    "test": "tsx --test test/property_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
